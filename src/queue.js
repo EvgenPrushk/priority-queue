@@ -13,7 +13,7 @@ class PriorityQueue {
 		if (this.size() < this.maxSize) {
 			this.heap.push(data, priority);
 		} else {
-			return console.log('Not valid size');
+			throw new Error('Not valid size');
 		}
 	}
 
